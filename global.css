@@ -1,0 +1,95 @@
+/* ====== Base / reset suave ====== */
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  line-height: 1.6;
+  color: #222;
+  background: #f7f7fa;
+}
+
+/* ====== Paleta (puedes cambiar los colores aquí) ====== */
+:root{
+  --brand: #C7A648;   /* dorado suave */
+  --accent: #B76E79;  /* rose gold */
+  --card: #ffffff;
+  --border: #e6e6ef;
+}
+
+/* ====== Header / logo / banner ====== */
+header{
+  background: var(--card);
+  border-bottom: 1px solid var(--border);
+  padding: 1rem 1.25rem 0.75rem;
+  text-align: center;
+}
+#logo{
+  display: inline-block;
+  border: 2px solid var(--brand);
+  border-radius: 12px;
+  padding: .35rem .75rem;
+  font-weight: 700;
+  letter-spacing: .3px;
+  margin-bottom: .5rem;
+}
+h1{ margin: .25rem 0 0; }
+.tagline{ margin: .15rem 0 .5rem; color: #666; }
+
+/* ====== Navegación ====== */
+nav ul{
+  list-style: none;
+  margin: .25rem 0 .75rem;
+  padding: 0;
+  display: flex;
+  gap: .75rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+nav a{
+  text-decoration: none;
+  color: #222;
+  padding: .45rem .75rem;
+  border-radius: 999px;
+}
+nav a:hover,
+nav a:focus{ outline: none; box-shadow: 0 0 0 2px var(--brand) inset; }
+nav a.active{ border-bottom: 2px solid var(--brand); }
+
+/* ====== Layout principal ====== */
+main{
+  padding: 1.25rem;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.25rem;
+}
+article, .sidebar{
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: 1rem 1.25rem;
+}
+
+/* ====== Figura con imagen flotante (requisito: float) ====== */
+.float-right{ float: right; margin: 0 0 1rem 1rem; width: 40%; min-width: 220px; }
+.float-right img{ width: 100%; height: auto; display: block; border-radius: 10px; }
+figure{ background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: .5rem; }
+figcaption{ font-size: .9rem; color: #666; }
+
+/* Limpiar el float dentro del artículo */
+article::after{ content: ""; display: block; clear: both; }
+
+/* ====== Tipografía y elementos ====== */
+h2{ margin-top: .25rem; }
+ul{ padding-left: 1.1rem; }
+
+/* ====== Footer ====== */
+footer{
+  background: var(--card);
+  border-top: 1px solid var(--border);
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+  color: #555;
+}

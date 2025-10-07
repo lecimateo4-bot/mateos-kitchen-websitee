@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <link rel="stylesheet" href="SiteStyle/global.css">
+</head>
+<body>
+  <header>
+    <div id="logo"><img src="SiteImage/logo.png" alt="Logo de Mateo's Kitchen" style="height:60px;"></div>
+    <h1>Mi Sitio Web</h1>
+    <p class="tagline">Un slogan aquí</p>
+
+    <nav>
+      <ul>
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="about.html">Sobre mí</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <article>
+      <h2>Contacto</h2>
+      <p>Puedes escribirme a <a href="mailto:tuemail@example.com">tuemail@example.com</a> o completar el formulario.</p>
+
+      <!-- Formulario simple (solo visual; sin backend) -->
+      <form action="#" method="post" style="background:#fff;border:1px solid #e6e6ef;border-radius:12px;padding:1rem;max-width:600px;">
+        <label for="nombre">Nombre</label><br>
+        <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" style="width:100%;padding:.6rem;margin:.35rem 0 0.75rem;border:1px solid #ccc;border-radius:8px;">
+
+        <label for="correo">Correo</label><br>
+        <input id="correo" name="correo" type="email" placeholder="tucorreo@ejemplo.com" style="width:100%;padding:.6rem;margin:.35rem 0 0.75rem;border:1px solid #ccc;border-radius:8px;">
+
+        <label for="mensaje">Mensaje</label><br>
+        <textarea id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje…" style="width:100%;padding:.6rem;margin:.35rem 0 0.75rem;border:1px solid #ccc;border-radius:8px;"></textarea>
+
+        <button type="submit" style="padding:.6rem 1rem;border-radius:999px;border:1px solid #C7A648;background:#fff;">Enviar</button>
+      </form>
+
+      <figure class="float-right" style="margin-top:1rem;">
+        <img src="SiteImage/contacto.jpg" alt="Imagen de contacto">
+        <figcaption>¡Hablemos!</figcaption>
+      </figure>
+    </article>
+  </main>
+
+  <footer>
+    <p>© 2025 Leci Mateo. Todos los derechos reservados.</p>
+  </footer>
+</body>
+</html>
